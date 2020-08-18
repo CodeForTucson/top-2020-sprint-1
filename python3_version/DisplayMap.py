@@ -8,13 +8,17 @@ class DisplayMap:
         None
 
     Usage:
-        map = DisplayMap()
-        map.display_basemap()
+        my_map = DisplayMap()
+        my_map.display_basemap()
     """
 
     import geopandas as gp
 
-    def display_basemap:
+    def display_basemap():
         """ Display the basemap using Geopandas. """
         world = gp.read_file(gp.datasets.get_path('naturalearth_lowres'))
         world.plot()
+
+if __name__ == '__main__':
+    my_map = DisplayMap()
+    my_map.display_basemap
